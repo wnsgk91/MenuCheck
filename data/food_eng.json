@@ -1,0 +1,369 @@
+{"food":[{
+  "name": "Sundaegukbap",
+  "category": "rice",
+  "detail": "This dish consists of sundae, which is steamed pig intestines stuffed with seasoned, minced vegetables, and rice with soup. Perilla seeds, ginger, and a variety of medicinal herbs are boiled with the sundae to remove any unpleasant meat smell."
+},{
+  "name": "Ssambap",
+  "category": "rice",
+  "detail": "Steamed rice wrapped in leafy vegetables or seaweed with seasoned sauce. Lettuce, perilla leaves, Napa cabbage, squash leaves, cabbage, dried laver, brown seaweed, or kelp may beused as the wraps."
+},{
+  "name": "albap",
+  "category": "rice",
+  "detail": "Warm rice topped with raw fish roe, thin slices of danmuji yellow pickled radish, julienned cucumber and carrot, and chopped kimchi and served in a heated ttukbaegi earthen pot greased with sesame oil. The way the fish eggs pop when chewed makes this dish unique and fun to eat."
+},{
+  "name": "yangpunbibimbap",
+  "category": "rice",
+  "detail": "Cooked rice topped with a variety of vegetables and sautéed beef and mixed with gochujang red chili paste.This dish is served in a brass bowl large enough for several people to eat together."
+},{
+  "name": "yeonnipbap",
+  "category": "rice",
+  "detail": "Glutinous rice, dates, and chestnuts wrapped in a lotus leaf and steamed in a steamer. In the past, this dish was made and consumed by Buddhist monks, but it is now popular among health-conscious people."
+},{
+  "name": "yeolmubibimbap",
+  "category": "rice",
+  "detail": "A type of bibimbap mixed with yeolmu young summer radish and gochujang red chili paste. Yeolmukimchi is a summer delicacy loved for its refreshing, appetite-stimulating taste."
+},{
+  "name": "Yeongyangdolsotbap",
+  "category": "rice",
+  "detail": "Rice, various grains, chestnuts, ginko nuts, and pine nuts are cooked and served in a stone bowl. After the bowl is empty, hot water is poured over the crispy layer of rice at the bottom to make a rice infusion sungnyung."
+},{
+  "name": "Ogokbap",
+  "category": "rice",
+  "detail": "This dish is made up of five different varieties of rice and grains, including glutinous rice, sorghum, millet, adzuki beans, and black soybeans. Koreans used to cook Ogokbap five-grain rice on the first full moon 15th day of the year, according to the lunar calendar, to share with neighbors and wish for peace and a good harvest."
+},{
+  "name": "obunjakdolsotbap",
+  "category": "rice",
+  "detail": "Rice cooked with small abalone haliotis supertexta and broth in a stone pot. Haliotis supertexta looks similar to abalone but is smaller and has a distinctively chewy texture. It is a popular ingredient of seafood soup served in a hot earthen pot."
+},{
+  "name": "Ojingeodeopbap",
+  "category": "rice",
+  "detail": "Squid marinated in a spicy sauce with onions and carrots, stir-fried, and served over steamed rice."
+},{
+  "name": "jeonbokdolsotbap",
+  "category": "rice",
+  "detail": "Rice cooked with abalone intestines and broth in a stone pot and topped with sliced abalone. The distinctive flavor of abalone intestines goes particularly well with rice."
+},{
+  "name": "Ureongdoenjangbibimbap",
+  "category": "rice",
+  "detail": "The essential ingredient of this dish is ureongdoenjang, which is soybean paste boiled with chopped onion, green pepper, mushrooms, and freshwater snails in rice water."
+},{
+  "name": "ureongssambap",
+  "category": "rice",
+  "detail": "This dish is made by wrapping cooked rice in leafy vegetables with gangdoenjang seasoned soybean paste made with freshwater snails. The chewy texture and flavor of freshwater snails go particularly well with doenjang soybean paste."
+},{
+  "name": "yukhoedolsotbibimbap",
+  "category": "rice",
+  "detail": "This is a type of bibimbap served in a sizzling-hot stone pot. The rice, mixed with a variety of colorful vegetables and beef tartare, remains piping hot until the end of the meal."
+},{
+  "name": "Yukhoebibimbap",
+  "category": "rice",
+  "detail": "This is a bowl of rice topped with seasonal namul seasoned vegetables and fresh yukhoe chopped raw beef and served with seasoning. Lean fresh rump or eye of round is the preferred cut for this dish."
+},{
+  "name": "Japgokbap",
+  "category": "rice",
+  "detail": "Bap made with various grains such as rice, beans, red beans, and millet. One version of Japgokbap is Ogokbap five-grain rice, a combination of sweet rice, glutinous millet, glutinous sorghum, black beans, and sweet red beans."
+},{
+  "name": "Japchaedeopbap",
+  "category": "rice",
+  "detail": "Symbolizing harmony, japchae, a variety of cooked vegetables stir-fried with cooked glass noodles, is one of the most common festive dishes served at parties or on special occasions. This dish consists of rice topped with japchae, and is served on a plate with seasoning."
+},{
+  "name": "janggukbap",
+  "category": "rice",
+  "detail": "Jangguk is a beef soup made by thoroughly boiling beef with radish and bracken at low heat for a long time. Janggukbap is made by adding cooked rice to jangguk. Hot jangguk poured over cold cooked rice in a ttukbaegi makes a filling meal, with or without side dishes."
+},{
+  "name": "Jangeodeopbap",
+  "category": "rice",
+  "detail": "This is a bowl of rice topped with grilled eel and garnished with julienned ginger and radish sprouts. The eel is first half-grilled and half-steamed before being brushed with a sauce made from soy sauce."
+},{
+  "name": "baekban",
+  "category": "table",
+  "detail": "This is a meal of rice and soup served with various side dishes that are commonly eaten at home, such as vegetable salads, grilled fish, and kimchi. It is considered to be a typical Korean home-style meal."
+},{
+  "name": "Ugeojisagolgukbap",
+  "category": "rice",
+  "detail": "Ugeoji is the dried outer leaves of napa cabbage, and is rich in vitamins, calcium, and fiber. To make this dish, dried ugeoji is boiled, drained, and seasoned with doenjang soybean paste and put in a bowl of beef bone broth with rice."
+},{
+  "name": "janggukbap",
+  "category": "rice",
+  "detail": "Jangguk is a beef soup made by thoroughly boiling beef with radish and bracken at low heat for a long time. Janggukbap is made by adding cooked rice to jangguk. Hot jangguk poured over cold cooked rice in a ttukbaegi makes a filling meal, with or without side dishes."
+},{
+  "name": "Jangeodeopbap",
+  "category": "rice",
+  "detail": "This is a bowl of rice topped with grilled eel and garnished with julienned ginger and radish sprouts. The eel is first half-grilled and half-steamed before being brushed with a sauce made from soy sauce."
+},{
+  "name": "jeonbokdolsotbap",
+  "category": "rice",
+  "detail": "Rice cooked with abalone intestines and broth in a stone pot and topped with sliced abalone. The distinctive flavor of abalone intestines goes particularly well with rice."
+},{
+  "name": "Jeonjubibimbap",
+  "category": "rice",
+  "detail": "This is a type of bibimbap topped with a variety of colorful vegetables and beef tartare that is widely popular across the Jeonju area of North Jeolla Province. The dish has also been referred to as “jeonju bean sprout beef tartare bibimbap,” as the bean sprout and beef tartare are the ingredients that make jeonjubibimbap so unique."
+},{
+  "name": "Jinjubibimbap",
+  "category": "rice",
+  "detail": "Fluffy white rice topped with beef tartare and surrounded with vegetables that have been chopped and seasoned with soy sauce, sesame seeds, and sesame oil. Mixed with gochujang red chili paste at the table, this dish was originally served with a clam soup, but now the soup is often replaced with seonjiguk a soup with coagulated pig's blood."
+},{
+  "name": "Jumeokbap",
+  "category": "rice",
+  "detail": "This is made by shaping a handful of cooked rice, seasoned with various ingredients, into a ball. Jumeokbap riceballs can be made with a variety of ingredients, such as bulgogi, kimchi, nuts, and leafy vegetables."
+},{
+  "name": "jeyukssambap",
+  "category": "rice",
+  "detail": "This food is prepared by wrapping jeyukbokkeum and cooked rice in leafy vegetables. Jeyubokkeum is a spicy dish made with sliced pork stir-fried with onion and carrot. It is popular both as a side dish and as a main dish."
+},{
+  "name": "Jeyukbibimbap",
+  "category": "rice",
+  "detail": "This dish is made up of thinly sliced pork that is stir-fried with gochujang and then served on rice with a variety of vegetables. It is a popular, reasonably priced meal that can be served without side dishes."
+},{
+  "name": "Jeyukdeopbap",
+  "category": "rice",
+  "detail": "This dish consists of thinly sliced pork stir-fried with vegetables and gochujang red chili paste and served on rice. It is popular among busy office workers as the dish is large enough that is doesn’t require side dishes."
+},{
+  "name": "doganisuyuk",
+  "category": "steamed",
+  "detail": "An energy-boosting dish prepared by boiling ox knee bones, doganisuyuk is rich in calcium and good for children, seniors, and expecting mothers. It is served with a soy sauce-based dipping sauce."
+},{
+  "name": "deodeokbossam",
+  "category": "steamed",
+  "detail": "Known as deodeok in Korean, wild bellflower roots grow on mountains and in fields throughout the country. The young leaves are used as wraps, while the roots are used in herbal medicines as well as food. For this particular dish, well-ripened deodeok is cut into bite-sized pieces and wrapped in leaves with boiled pork."
+},{
+  "name": "daeguppoljjim",
+  "category": "steamed",
+  "detail": "This spicy dish is made by braising seasoned cod heads with bean sprouts, water parsley, and other vegetables. Cod head has a meaty and chewy texture."
+},{
+  "name": "olgaengitguk",
+  "category": "soup",
+  "detail": "Doenjang soybean paste soup made by boiling melanian snails in water and adding doenjang and rice water to make a broth, to which deshelled melanian snails, garlic chives, red chili powder, and chopped garlic and green onion are then added and boiled. This is a popular hangover remedy and liver detox."
+},{
+  "name": "chamchigimbap",
+  "category": "rice",
+  "detail": "Gimbap with a filling of tuna mixed with mayonnaise, in addition to the basic ingredients. It is especially popular among young people."
+},{
+  "name": "deunggalbimugeunjijjim",
+  "category": "steamed",
+  "detail": "For this dish, pig backbone is braised with mukeunji aged kimchi. After being seasoned and simmered in broth, the mukeunji becomessoft and savory."
+},{
+  "name": "dwaejideungppyeojjim",
+  "category": "steamed",
+  "detail": "This dish is made by braising boiled pig backbone with various vegetables and a soy sauce-based seasoning. Pig backbones are affordable yet nutritious and tasty."
+},{
+  "name": "dongtaejjim",
+  "category": "steamed",
+  "detail": "To prepare this dish, cut dongtae quick-frozen pollack into pieces and braise with soy sauce mixed with green pepper and garlic. Add bean sprouts and water parsley and braise with seasoning of red chili pepper to add spiciness."
+},{
+  "name": "domijjim",
+  "category": "steamed",
+  "detail": "A descaled, scored, and salted snapper braised in a steamer and topped colorfully with beef, water parsley, mushroom, and egg garnish, domijjim is a delicacy that used to be served at the royal court."
+},{
+  "name": "godeungeogui",
+  "category": "grilled",
+  "detail": "Mackerel sprinkled withcoarse sea salt and grilled or pan-fried.Mackerel is sometimes salted and half dried or heavily salted for storage."
+},{
+  "name": "meoritgogi",
+  "category": "steamed",
+  "detail": "This dish is made by boiling and pressing a pig’s head. More chewy than pressed pork meat, the pressed pig’s head is sliced and served with seasoned and salted shrimp sauce."
+},{
+  "name": "maeungalbijjim",
+  "category": "steamed",
+  "detail": "This dish of boiled pork or pork short ribs braised with gochujang red chili paste sauce, potato, carrot, and other vegetables is highly addictive."
+},{
+  "name": "ttukbaegigyeranjjim",
+  "category": "steamed",
+  "detail": "Eggs well beaten with salted shrimp and seasoned with salt and steamed in a hot pot. The beautiful color and soft texture of this dish are especially appealing to children and seniors."
+},{
+  "name": "daegejjim",
+  "category": "steamed",
+  "detail": "This dish is steamed crab meat removed from the shell and served with a vinegar sauce. When steaming snow crabs, turn the crabs upside down and be careful not to let the legs detach from the body. This helps keep the meat tasting as fresh as possible."
+},{
+  "name": "godeungeogui",
+  "category": "grilled",
+  "detail": "Mackerel sprinkled withcoarse sea salt and grilled or pan-fried.Mackerel is sometimes salted and half dried or heavily salted for storage."
+},{
+  "name": "meoritgogi",
+  "category": "steamed",
+  "detail": "This dish is made by boiling and pressing a pig’s head. More chewy than pressed pork meat, the pressed pig’s head is sliced and served with seasoned and salted shrimp sauce."
+},{
+  "name": "maeungalbijjim",
+  "category": "steamed",
+  "detail": "This dish of boiled pork or pork short ribs braised with gochujang red chili paste sauce, potato, carrot, and other vegetables is highly addictive."
+},{
+  "name": "ttukbaegigyeranjjim",
+  "category": "steamed",
+  "detail": "Eggs well beaten with salted shrimp and seasoned with salt and steamed in a hot pot. The beautiful color and soft texture of this dish are especially appealing to children and seniors."
+},{
+  "name": "daegejjim",
+  "category": "steamed",
+  "detail": "This dish is steamed crab meat removed from the shell and served with a vinegar sauce. When steaming snow crabs, turn the crabs upside down and be careful not to let the legs detach from the body. This helps keep the meat tasting as fresh as possible."
+},{
+  "name": "dwaejigogimechurialjangjorim",
+  "category": "boiled",
+  "detail": "To prepare this dish, lean cuts of pork and quail eggs are braised in a mixture of soy sauce, sugar, and garlic. The meat is shredded along the grain into small pieces and drizzled with the braising sauce when served."
+},{
+  "name": "domijorim",
+  "category": "boiled",
+  "detail": "Sea bream braised with soy sauce, sliced garlic, ginger, and sugar until a glaze forms. The sweet sauce of this dish makes it a perfect match for rice or alcoholic beverages."
+},{
+  "name": "godeungeojorim",
+  "category": "boiled",
+  "detail": "Mackerel sliced sideways and braised in a spicy soy sauce mixture with white radish or potatoes. Green Napa cabbage leaves or kimchi may also be added."
+},{
+  "name": "gamjajorim",
+  "category": "boiled",
+  "detail": "To make Gamjajorim braised potatoes with soy sauce, potatoes are cut into bite-sized pieces and fried in a pan over medium heat. They are then added to soy sauce and water and boiled to a glaze."
+},{
+  "name": "galchijorim",
+  "category": "boiled",
+  "detail": "Cutlassfish cut into pieces and braised in a spicy soy sauce mixture with white radish and green chili peppers. The sauce is spooned over the ingredients while cooking to allow the flavors to seep in. Potato can be used instead of radish."
+},{
+  "name": "dubujeongol",
+  "category": "stew",
+  "detail": "Sliced bean curd, onion, carrots, Korean parsley, and beef, artfully arranged and cooked in a hot pot.Loved by many for its mild and refreshing taste."
+},{
+  "name": "mugeunjigodeungeojorim",
+  "category": "boiled",
+  "detail": "This dish is made by braising mackerel and well-aged kimchi in a spicy sauce. The recipe may be simple, but the soft mackerel and well-aged kimchi seem to come together in perfect harmony."
+},{
+  "name": "mechurialjangjorim",
+  "category": "boiled",
+  "detail": "Boiled and peeled quail eggs braised in a mixture of soy sauce, chopped garlic, ginger, sugar, and water, this popular Korean side dish is usually eaten with rice."
+},{
+  "name": "ttangkongjorim",
+  "category": "boiled",
+  "detail": "For this dish, peanuts are boiled in water and braised in a mixture of soy sauce, syrup, sugar, and garlic over low heat. Not only does it taste great, but it is packed with nutrients as well, as 10 peanuts meet the daily requirement for vitamin E."
+},{
+  "name": "dubujorim",
+  "category": "boiled",
+  "detail": "Lightly pan-fried bean curd simmered in soy sauce with red chili pepper, sugar, green onions, and garlic. It is served as a banchan side dish."
+},{
+  "name": "kkochigui",
+  "category": "grilled",
+  "detail": "One of the most popular skewed dishes and street snacks, chicken skewers are made by grilling meat, seafood, and vegetables that have been cut into bite-sized pieces and placed on a skewer."
+},{
+  "name": "gim",
+  "category": "grilled",
+  "detail": "This is a type of edible seaweed, or dried laver, made from seaweed that grows on rocks like moss. It is eaten by toasting it with sesame or perilla oil. Also, gimbap is made by rolling a variety of ingredients and rice in sheets of gim."
+},{
+  "name": "gulbigui",
+  "category": "grilled",
+  "detail": "Gulbi, or salted and dried yellow croaker, is closely associated with Yeonggwang, South Jeolla Province. This dish features gulbi brushed with sesame oil and cooked on a gridiron. It is considered a luxury food."
+},{
+  "name": "gomjangeogui",
+  "category": "grilled",
+  "detail": "A local specialty of Gijang, Busan, this dish is made by straw grilling whole sea eel and removing the skin and offal before serving. “Gomjangeo” is the term for “meokjangeo” in the dialect of Gyeongsang Province."
+},{
+  "name": "Gwangyangbulgogi",
+  "category": "grilled",
+  "detail": "A local specialty of Gwangyang, South Jeolla Province, this dish is prepared by seasoning thinly sliced beef immediately before cooking on a charcoal grill. Cooking the beef quickly on a copper grill with excellent heat conductivity keeps it juicy and tender."
+},{
+  "name": "daechanggui",
+  "category": "grilled",
+  "detail": "Tripe or beef large intestines turned inside out, cleaned with flour, and grilled or marinated in a sauce before grilling. This dish is both tasty and chewy."
+},{
+  "name": "dakkkochigui",
+  "category": "grilled",
+  "detail": "Here, salted chicken breast is cut into bite-sized pieces and skewered and grilled with soy or gochujang. To make it more visually pleasing, vegetables in various colors, such as green pepper, can be put on the skewers with the chicken."
+},{
+  "name": "neobiani",
+  "category": "grilled",
+  "detail": "This dish is prepared by grilling slices of beef that have been marinated in seasoned soy sauce, and is served with ground pine nuts sprinkled on top. It is one of the most representative traditional Korean meat dishes. Neobiani is named for the shape of the slices of beef, as the term implies “to slice up.”"
+},{
+  "name": "nakjihorong",
+  "category": "grilled",
+  "detail": "A whole octopus skewered on a bamboo stick and rolled up, brushed with a sauce, and grilled. Rolling the octopus in this way makes it more fun to eat."
+},{
+  "name": "kkongchigui",
+  "category": "grilled",
+  "detail": "This is cleaned, scored, and salted saury cooked on a grill or roasted in an oiled pan. Saury is affordable yet nutritious and tasty, making it a popular dish both at home and restaurants."
+},{
+  "name": "kkaennipjeon",
+  "category": "korean-pancake",
+  "detail": "Half-folded perilla leaves stuffed with a mixture of minced meat and vegetables, egg-battered, and pan-fried. The fragrant perilla leaves stimulate one’s taste buds."
+},{
+  "name": "kimchijeon",
+  "category": "korean-pancake",
+  "detail": "Slices of well-fermented kimchi mixed into a flour batter and pan- fried. Finely chopped pork, squid, and clam meat may be added to the batter as well."
+},{
+  "name": "gimbugak",
+  "category": "korean-pancake",
+  "detail": "This side dish is made by brushing laver with sweet rice paste and sprinkling with sesame seeds and red chili powder before sun-drying and deep-frying."
+},{
+  "name": "gimmaritwigim",
+  "category": "korean-pancake",
+  "detail": "Boiled glass noodles pan-fried with chopped carrot and green onion, wrapped in laver cut into four pieces, and battered and fried. A Korean favorite, this snack is usually eaten with tteokbokki."
+},{
+  "name": "gopchanggui",
+  "category": "grilled",
+  "detail": "Beef innards either marinated and grilled or simply grilled and served with a seasoned sauce."
+},{
+  "name": "danhobaktwigim",
+  "category": "korean-pancake",
+  "detail": "Seeded sweet pumpkin cut into one- to two-centimeter pieces, coated with flour, battered, and fried. Sweet pumpkin is just as sweet as sweet potatoes."
+},{
+  "name": "dangunsinhwajeon",
+  "category": "korean-pancake",
+  "detail": "This is a dish made with the ingredients mentioned in the Korean foundation myth, “Myth of Dangun.” Perilla leaves, roasted beef, and garlic are rolled in cabbage leaves, coated with flour, and dipped into beaten eggs. The wraps are cut into bite-sized pieces before serving."
+},{
+  "name": "dasimabugak",
+  "category": "korean-pancake",
+  "detail": "Thick kelp brushed with sweet rice paste and then sun-dried and deep-fried."
+},{
+  "name": "nokdujeon",
+  "category": "korean-pancake",
+  "detail": "Stone-ground mung beans, sliced beef or pork, mung bean sprouts, fiddleheads, and cabbage kimchi mixed into a batter and shallow-fried on a griddle. Ground rice may be added to soften the taste."
+},{
+  "name": "kkomakjeon",
+  "category": "korean-pancake",
+  "detail": "Parboiled and shucked cockles mixed with beaten eggs, flour, and vegetables and pan-fried. This dish is a local specialty of South Jeolla Province, which is a major cockle producer."
+},{
+  "name": "Gamjatteok",
+  "category": "rice-cake",
+  "detail": "To make this dish, first peel and grate potatoes and wring in a clean cloth to remove any excess moisture. Mix potato starch, grated potatoes, and soaked kidney beans to form a dough and then steam. When cooled, this potato cake makes a healthy snack with a chewy texture."
+},{
+  "name": "garaetteok",
+  "category": "rice-cake",
+  "detail": "Short-grain rice steamed, pounded, and rolled to form a long, cylindrical rice cake. A staple of New Year’s Day, it is sliced sideways and used as the main ingredient of tteokguk rice cake soup."
+},{
+  "name": "Chaemandu",
+  "category": "dumpling",
+  "detail": "A local specialty consumed in Jeongseon, Gangwon Province, chaemandu is a dumpling dish made with gatkimchi and aged, dried, and soaked vegetables wrapped in buckwheat wrappers."
+},{
+  "name": "hobakjeon",
+  "category": "korean-pancake",
+  "detail": "Zucchini sliced, flour-coated, and pan-fried in egg batter. This dish is simple to make and consumed as an everyday side dish with rice."
+},{
+  "name": "donggeurangttaeng",
+  "category": "korean-pancake",
+  "detail": "A mixture of ground beef or pork and minced vegetables molded into round shapes, flour-coated, egg-battered, and pan-fried."
+},{
+  "name": "mujigaetteok",
+  "category": "rice-cake",
+  "detail": "This is a layered rice cake with different colors, thus the name “mujigae rainbow.” It is made from powdered short grain rice and colored using various natural ingredients, such as gardenia seeds, mugwort, and manna lichen powder. This colorful rice cake used to be served on special occasions, especially on first birthday parties for babies, in the hopes that the babies would grow into happy, well-rounded adults."
+},{
+  "name": "Kkultteok",
+  "category": "rice-cake",
+  "detail": "Pass sweet rice powder mixed with honey through a sieve, layer with jujubes and pine nuts, and steam. Or make the mixture into a dough. Shape the dough into pieces and stuff with honey or sugar."
+},{
+  "name": "kkaegyeongdan",
+  "category": "rice-cake",
+  "detail": "Sweet rice powdered and shaped into small balls, boiled in water, and coated with a dressing powder made from various ingredients, such as sesame seeds ggaegyeongdan and boiled and powdered soybeans konggarugyeongdan."
+},{
+  "name": "gyeongdan",
+  "category": "rice-cake",
+  "detail": "Sweet rice or glutinous millet powder shaped into small balls, boiled in water, and coated in dressing powder gomul. Called sesame gyeongdan, red bean gyeongdan, or chestnut gyeongdan, depending on the dressing powder."
+},{
+  "name": "nokdusirutteok",
+  "category": "rice-cake",
+  "detail": "Sirutteok refers to glutinous or short grain rice powder layered alternatively with a dressing powder and steamed. Nokdusirutteok uses steamed whole mung beans or powdered mung beans as a topping."
+},{
+  "name": "songpyeon",
+  "category": "rice-cake",
+  "detail": "This is made by filling half-moon-shaped rice dough, made by mixing non-glutinous rice powder with warm water, with a mixture of sesame seeds, chestnuts, and beans,  mong others. The quintessential snack during Chuseok, songpyeon, literally meaning “pine rice cake” in Korean, is named thus as it is steamed over a layer of pine “song” in Korean needles."
+},{
+  "name": "Baekseolgi",
+  "category": "rice-cake",
+  "detail": "Powdered rice mixed with sugared water, sifted, and steamed in a siru earthenware steamer without any dressing powder. Due to its white color, believed to symbolize innocence and purity, beakseolgi is traditionally prepared to celebrate a baby’s 100th day or first birthday."
+},{
+  "name": "wangmandu",
+  "category": "dumpling",
+  "detail": "This dumpling is made by mincing meat, bean sprouts, and tofu and covering it with blood made of flour."
+}]}

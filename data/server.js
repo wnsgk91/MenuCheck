@@ -33,7 +33,7 @@ app.get('/', function(req, res) {
   values = [];
 
   // String 형식으로 받음.
-  var jsondata = fs.readFileSync("./food.json", 'utf8');
+  var jsondata = fs.readFileSync("./food_kor.json", 'utf8');
   var modified = JSON.parse(jsondata.trim());
 
   for (var i = 0; i <= Object.keys(modified.food).length-1; i++) {
@@ -48,7 +48,7 @@ app.get('/', function(req, res) {
   }
 
   // MySQL insert query
-  connection.query('INSERT INTO food (name, category, detail) VALUES ?', [values], function(err,result) {
+  connection.query('INSERT INTO food_kor (name, category, detail) VALUES ?', [values], function(err,result) {
     if(err) {
       console.log(err.toString());
     } else {
