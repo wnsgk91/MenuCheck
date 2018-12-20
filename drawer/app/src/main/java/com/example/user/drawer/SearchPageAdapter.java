@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,7 +56,7 @@ public class SearchPageAdapter extends RecyclerView.Adapter<SearchPageAdapter.It
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v =  LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_view_food, parent, false);
+        View v =  LayoutInflater.from(parent.getContext()).inflate(R.layout.page_search_row, parent, false);
         return new ItemViewHolder(v);
     }
 
@@ -65,15 +64,13 @@ public class SearchPageAdapter extends RecyclerView.Adapter<SearchPageAdapter.It
     @Override
     public void onBindViewHolder(final ItemViewHolder holder, final int position) {
         final FoodInfo foodInfo = myDatasetFiltered.get(position);
-        //holder.image.setText(foodInfo.getImage());
         holder.name.setText(foodInfo.getName());
 
         holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("!", v.toString() );
-                Intent intent = new Intent(v.getContext(), FoodList.class);
-                intent.putExtra(holder.name.getText().toString(), "111");
+                Intent intent = new Intent(v.getContext(), Dialog.class);
+                intent.putExtra("detail",holder.name.getText().toString() );
                 context.startActivity(intent);
             }
         });
@@ -83,11 +80,16 @@ public class SearchPageAdapter extends RecyclerView.Adapter<SearchPageAdapter.It
                 myClickListener.onItemClick(foodInfo, position);
             }
         });
+
         if(foodInfo.isFav()){
             holder.imgFav.setImageDrawable(context.getResources().getDrawable(R.drawable.baseline_favorite_black_24dp));
         }else{
             holder.imgFav.setImageDrawable(context.getResources().getDrawable(R.drawable.baseline_favorite_white_24dp));
         }
+
+
+
+
     }
 
     // return the size of dataset.

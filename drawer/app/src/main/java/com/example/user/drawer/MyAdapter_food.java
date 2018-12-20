@@ -7,16 +7,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 
 public class MyAdapter_food extends RecyclerView.Adapter<MyAdapter_food.ItemViewHolder> {
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference grilled = database.getReference("grilled_kor_name");
 
     private ArrayList<FoodInfo> myData;
 
     public MyAdapter_food(ArrayList<FoodInfo> myData){
         this.myData = myData;
     }
-
 
     // create new view holder
     @NonNull
@@ -26,35 +31,31 @@ public class MyAdapter_food extends RecyclerView.Adapter<MyAdapter_food.ItemView
         return new ItemViewHolder(v);
     }
 
-
     // transform content of View to that poistion data.
     @Override
-    public void onBindViewHolder(ItemViewHolder holder, int position) {
+    public void onBindViewHolder(final ItemViewHolder holder, int position) {
 
-        //holder.image.setText(myDataset.get(position).image);
         holder.name.setText(myData.get(position).name);
+
     }
 
-
-    //
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
-       // TextView image;
+        //ImageView image;
         TextView name;
+        TextView eng_name;
 
         public ItemViewHolder(View view){
             super(view);
-           // image = view.findViewById(R.id.image);
+            //image = view.findViewById(R.id.food_image);
             name = view.findViewById(R.id.name);
         }
 
     }
-
 
     // return the size of dataset.
     @Override
     public int getItemCount() {
         return myData.size();
     }
-
 
 }

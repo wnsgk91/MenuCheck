@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">drawer</string>
-
+    <string name="cannot">PhotoIntentActivity</string>
 </resources>

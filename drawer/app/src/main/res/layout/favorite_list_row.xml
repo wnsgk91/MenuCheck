@@ -7,6 +7,11 @@
         android:id="@+id/favorite_food_name"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
         android:layout_weight="1"
         android:text="TextView" />
+
+
 </LinearLayout>

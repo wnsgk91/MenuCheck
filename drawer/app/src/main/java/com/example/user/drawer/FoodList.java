@@ -2,22 +2,25 @@ package com.example.user.drawer;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.user.drawer.databinding.ListFoodBinding;
+import com.example.user.drawer.db.DBHelper;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -28,39 +31,48 @@ public class FoodList extends AppCompatActivity{
 
     //firebase instance
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference image = database.getReference("image");
+
+    private com.example.user.drawer.myClickListener myClickListener;
+
+    private FoodInfo foodInfo;
 
     //recycle view
     private ListFoodBinding foodBinding;
-    private RecyclerView.Adapter adapter;
+    private MyAdapter_food adapter;
     ArrayList<FoodInfo> myData = new ArrayList<>();
 
-    //test
+    ImageView imageView;
+    Bitmap bitmap;
+
+    String type;
+
+    private DBHelper dbHelper;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.list_food);
         foodBinding = DataBindingUtil.setContentView(this, list_food);
 
         TextView food_type = (TextView) findViewById(R.id.category_name);
         Intent intent = getIntent();
-        String type = intent.getStringExtra("type");
+        type = intent.getStringExtra("type");
         food_type.setText(type);
 
         setRecyclerView();
 
         switch (type){
-            case "밥" : setData_rice();break;
-            case "상차림" : setData_table();break;
-            case "찜" : setData_steamed();break;
-            case "구이" : setData_grilled();break;
-            case "전골" : setData_stew();break;
-            case "조림" : setData_boiled();break;
-            case "전" : setData_pancake();break;
-            case "떡" : setData_ricecake();break;
-            case "만두" : setData_dumpling();break;
-            case "국" : setData_soup();break;
+            case "밥(Rice)" : setData_rice();break;
+            case "상차림(Korean-Table)" : setData_table();break;
+            case "찜(Steamed)" : setData_steamed();break;
+            case "구이(Grilled)" : setData_grilled();break;
+            case "전골(Stew)" : setData_stew();break;
+            case "조림(Boiled)" : setData_boiled();break;
+            case "전(Korean-Pancake)" : setData_pancake();break;
+            case "떡(Rice-Cake)" : setData_ricecake();break;
+            case "만두(Dumpling)" : setData_dumpling();break;
+            case "국(Soup)" : setData_soup();break;
         }
 
     }
@@ -70,6 +82,7 @@ public class FoodList extends AppCompatActivity{
 
         foodBinding.foodRecyclerView.setHasFixedSize(true);
         adapter = new MyAdapter_food(myData);
+
         foodBinding.foodRecyclerView.setAdapter(adapter);
         foodBinding.foodRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -95,6 +108,29 @@ public class FoodList extends AppCompatActivity{
 
     }
 
+    public void setImage(){
+
+        imageView = (ImageView) findViewById(R.id.category_image);
+
+        image.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                final String value = dataSnapshot.child(type).getValue(String.class);
+                Picasso.get().load(value).into(imageView);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+            }
+        });
+    }
+
+
+
+
 
     public void setData_rice(){
         DatabaseReference food_name = database.getReference("rice_kor_name");
@@ -102,8 +138,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
 
@@ -119,8 +156,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -134,8 +172,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -149,8 +188,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -164,8 +204,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -179,8 +220,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -194,8 +236,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -209,8 +252,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -224,8 +268,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override
@@ -239,8 +284,9 @@ public class FoodList extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
+                    String value = shot.getKey();
                     myData.add(new FoodInfo(value));
+                    setImage();
                 }
             }
             @Override

@@ -9,20 +9,27 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/food_name"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
         android:id="@+id/detail"
         android:layout_width="match_parent"
-        android:layout_height="526dp"
-        android:layout_margin="20dp"
-        android:textSize="12dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:textSize="17dp"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="200dp" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:onClick="close"
-        android:text="닫기" />
+
 
 </LinearLayout>

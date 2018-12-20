@@ -7,6 +7,14 @@
         android:title="Search"
         app:showAsAction="always"
         />
+
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@drawable/baseline_camera"
+        android:title="Camera"
+        app:showAsAction="always"
+        />
+
     <item
         android:id="@+id/action_more"
         android:icon="@drawable/baseline_more_vert_white_24dp"

@@ -1,9 +1,15 @@
 package com.example.user.drawer;
 
+import android.graphics.Bitmap;
+import android.widget.ImageView;
+
 public class FoodInfo {
 
-    public String image;
+    public int image;
     public String name;
+
+    public ImageView imageView;
+    public Bitmap bitmap;
 
     public FoodInfo(){
 
@@ -18,15 +24,33 @@ public class FoodInfo {
     }
     private boolean isFav;
 
-    public FoodInfo(String image, String name, boolean flag){
+    public FoodInfo(int image, String name, boolean flag){
         this.image = image;
         this.name = name;
         this.isFav = flag;
     }
 
+
+    public FoodInfo(String name, ImageView imageView){
+        this.name = name;
+        this.imageView = imageView;
+    }
+
+    public FoodInfo(String name, Bitmap bitmap){
+        this.name = name;
+        this.bitmap = bitmap;
+    }
+
+    public FoodInfo(String name, int image){
+        this.name = name;
+        this.image = image;
+    }
+
+
     public FoodInfo(String name){
         this.name = name;
     }
+
 
     public FoodInfo(String name, boolean flag){
         this.name = name;
@@ -42,8 +66,8 @@ public class FoodInfo {
         this.name= name;
     }
 
-    public String getImage(){return image;}
+    public int getImage(){return image;}
 
-    public void setImage(String image){this.image=image;}
+    public void setImage(int image){this.image=image;}
 
 }

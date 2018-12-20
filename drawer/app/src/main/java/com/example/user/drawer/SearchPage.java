@@ -2,7 +2,6 @@ package com.example.user.drawer;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -33,12 +32,11 @@ public class SearchPage extends AppCompatActivity implements SearchPageAdapter.S
 
     //firebase
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference food_kor_name = database.getReference("food_kor_name");
+    DatabaseReference food_kor_name = database.getReference("food_image");
 
 
     private PageSearchBinding mainBinding;
     private SearchPageAdapter adapter;
-    private RecyclerView recycler_view;
 
     private RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
     ArrayList<FoodInfo> myDataset = new ArrayList<>();
@@ -48,13 +46,15 @@ public class SearchPage extends AppCompatActivity implements SearchPageAdapter.S
     private Toolbar toolbar;
     private SearchView searchView;
 
+    ArrayList<String> name_list = new ArrayList<String>();
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        Intent intent = getIntent();
 
         mainBinding = DataBindingUtil.setContentView(this, page_search);
-        recycler_view = (RecyclerView) findViewById(R.id.my_recycler_view);
         setData();
         toolbar = findViewById(R.id.t1_custom);
         toolbar.setTitle("Search");
@@ -62,20 +62,40 @@ public class SearchPage extends AppCompatActivity implements SearchPageAdapter.S
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
     }
 
 
     private void setData() {
         myDataset.clear();
 
+
         food_kor_name.addValueEventListener(new ValueEventListener() {
+
+
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot shot : dataSnapshot.getChildren()){
-                    String value = shot.getValue().toString();
-                    myDataset.add(new FoodInfo(value,false));
+                if (dbHelper == null) {
+                    dbHelper = new DBHelper(getApplicationContext());
+                }
+                ArrayList<FoodInfo> info = dbHelper.getAll();
+                for (DataSnapshot shot : dataSnapshot.getChildren()) {
+                    String value = shot.getKey();
+                    name_list.add(value);
+
+                    ArrayList favorite_list = new ArrayList();
+                    for (FoodInfo row : info) {
+                        favorite_list.add(row.getName());
+                    }
+                    if (favorite_list.contains(value)) {
+                        myDataset.add(new FoodInfo(value, true));
+                    } else {
+                        myDataset.add(new FoodInfo(value, false));
+                    }
                 }
             }
+
+
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
@@ -116,6 +136,8 @@ public class SearchPage extends AppCompatActivity implements SearchPageAdapter.S
         mainBinding.myRecyclerView.setAdapter(adapter);
         mainBinding.myRecyclerView.setLayoutManager(mLayoutManager);
         mainBinding.myRecyclerView.setItemAnimator(new DefaultItemAnimator());
+
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -1,6 +1,7 @@
 package com.example.user.drawer;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,16 @@ public class FavoriteListAdapter extends BaseAdapter {
         this.foods = foods;
         this.context = context;
     }
+
+
+
+    public void onClick(View v) {
+        Intent intent = new Intent(v.getContext(), Dialog.class);
+        intent.putExtra("detail",favorite_food_name.getText().toString() );
+        context.startActivity(intent);
+    }
+
+
 
     @Override
     public int getCount() {

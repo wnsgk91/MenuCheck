@@ -23,7 +23,7 @@
                     android:id="@+id/prompt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="카테고리"
+                    android:text="Korean Food"
                     android:textSize="30sp"
                     android:gravity="center"/>
 

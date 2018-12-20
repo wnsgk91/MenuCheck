@@ -1,15 +1,18 @@
 package com.example.user.drawer;
 
-        import android.app.Activity;
-        import android.os.Bundle;
-        import android.support.annotation.Nullable;
-        import android.widget.ListView;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
-        import com.example.user.drawer.db.DBHelper;
+import com.example.user.drawer.db.DBHelper;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
 
-public class FavoriteList extends Activity {
+public class FavoriteList extends Activity{
 
     ListView listView;
     FavoriteListAdapter favoriteListAdapter;
@@ -19,6 +22,15 @@ public class FavoriteList extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.favorite_list);
         listView = (ListView) findViewById(R.id.foods_listview);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(view.getContext(), Dialog.class);
+                intent.putExtra("detail",foods.get(i).getName());
+                startActivity(intent);
+            }
+        });
 
         foods = new ArrayList<FoodInfo>();
 

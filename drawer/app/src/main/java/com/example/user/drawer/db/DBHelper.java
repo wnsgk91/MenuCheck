@@ -55,6 +55,9 @@ public class DBHelper extends SQLiteOpenHelper {
     public ArrayList<FoodInfo> getAll(){
         ArrayList<FoodInfo> foodlist = new ArrayList<FoodInfo>();
         String SELECT_ALL = "SELECT * FROM " + TABLE_FOODS;
+        //String SELECT_ALL = "DROP TABLE " + TABLE_FOODS;
+        //String SELECT_ALL = "CREATE TABLE " + TABLE_FOODS + "(" + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_NAME + " TEXT NOT NULL" + ");";
+
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(SELECT_ALL, null);
 
@@ -69,12 +72,15 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public void delFood(FoodInfo foodInfo){
-        SQLiteDatabase db = getReadableDatabase();
+        SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(KEY_NAME, foodInfo.getName());
+        String name = foodInfo.getName();
+        values.put(KEY_NAME, name);
 
-        db.delete(TABLE_FOODS, KEY_NAME + "=" + foodInfo.getName(), null);
+        db.delete(TABLE_FOODS, KEY_NAME + "=?", new String[]{name});
 
-        Toast.makeText(context, "delete 성공.", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context, "delete 성공.", Toast.LENGTH_SHORT).show();
     }
+
+
 }
